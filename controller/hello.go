@@ -2,6 +2,7 @@ package controller
 
 import (
 	"fmt"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -13,7 +14,7 @@ curl --location --request GET 'http://127.0.0.1:8192/api/v1/s1/gethello?user=<us
 */
 func (h HelloController) GetHello(ctx *gin.Context) {
 	user := ctx.Query("user")
-	ctx.String(200, fmt.Sprintf("Hello, %s!", user))
+	ctx.String(200, fmt.Sprintf("Hello, %s,this is ytdlp!", user))
 }
 
 // 结构体必须大写 否则找不到
