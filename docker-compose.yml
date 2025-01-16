@@ -1,0 +1,9 @@
+name: ytdlp
+services:
+    ytdlp:
+        container_name: ytdlp
+        volumes:
+            - /path/to/your/videos:/videos
+        ports:
+            - 9001:9001
+        image: zhangyiming748/ytdlp:latest
